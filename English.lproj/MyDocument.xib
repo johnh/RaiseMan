@@ -185,7 +185,7 @@
 													<object class="NSSortDescriptor" key="NSSortDescriptorPrototype">
 														<string key="NSKey">personName</string>
 														<bool key="NSAscending">YES</bool>
-														<string key="NSSelector">length</string>
+														<string key="NSSelector">caseInsensitiveCompare:</string>
 													</object>
 												</object>
 												<object class="NSTableColumn" id="336858607">
