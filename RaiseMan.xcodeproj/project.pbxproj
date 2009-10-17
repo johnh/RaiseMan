@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* MyDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		8101A0F7108A00E200D02B17 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8101A0F6108A00E200D02B17 /* AppController.m */; };
+		8101A110108A054800D02B17 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8101A10F108A054800D02B17 /* PreferenceController.m */; };
+		8101A118108A065100D02B17 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8101A117108A065100D02B17 /* Preferences.xib */; };
+		8101A135108A146600D02B17 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8101A134108A146600D02B17 /* About.xib */; };
+		8136B5DD1082F2DC0048C384 /* d20 in Resources */ = {isa = PBXBuildFile; fileRef = 8136B5DC1082F2DC0048C384 /* d20 */; };
 		81B173720E4F58D7000CCB0C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B173710E4F58D7000CCB0C /* Person.m */; };
+		81EA100C10896A6E007C4739 /* Gimp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 81EA100B10896A6E007C4739 /* Gimp.icns */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
@@ -30,8 +36,16 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* RaiseMan_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseMan_Prefix.pch; sourceTree = "<group>"; };
+		8101A0F5108A00E200D02B17 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		8101A0F6108A00E200D02B17 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		8101A10E108A054800D02B17 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		8101A10F108A054800D02B17 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		8101A117108A065100D02B17 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		8101A134108A146600D02B17 /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		8136B5DC1082F2DC0048C384 /* d20 */ = {isa = PBXFileReference; explicitFileType = image.ico; fileEncoding = 4; path = d20; sourceTree = "<group>"; };
 		81B173700E4F58D7000CCB0C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		81B173710E4F58D7000CCB0C /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		81EA100B10896A6E007C4739 /* Gimp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Gimp.icns; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,6 +107,10 @@
 				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
 				81B173700E4F58D7000CCB0C /* Person.h */,
 				81B173710E4F58D7000CCB0C /* Person.m */,
+				8101A0F5108A00E200D02B17 /* AppController.h */,
+				8101A0F6108A00E200D02B17 /* AppController.m */,
+				8101A10E108A054800D02B17 /* PreferenceController.h */,
+				8101A10F108A054800D02B17 /* PreferenceController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -109,11 +127,15 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				81EA100B10896A6E007C4739 /* Gimp.icns */,
+				8136B5DC1082F2DC0048C384 /* d20 */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 				1DDD58280DA1D0D100B32029 /* MyDocument.xib */,
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
+				8101A117108A065100D02B17 /* Preferences.xib */,
+				8101A134108A146600D02B17 /* About.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -174,6 +196,10 @@
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
+				8136B5DD1082F2DC0048C384 /* d20 in Resources */,
+				81EA100C10896A6E007C4739 /* Gimp.icns in Resources */,
+				8101A118108A065100D02B17 /* Preferences.xib in Resources */,
+				8101A135108A146600D02B17 /* About.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +213,8 @@
 				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				81B173720E4F58D7000CCB0C /* Person.m in Sources */,
+				8101A0F7108A00E200D02B17 /* AppController.m in Sources */,
+				8101A110108A054800D02B17 /* PreferenceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
