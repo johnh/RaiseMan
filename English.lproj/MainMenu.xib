@@ -63,7 +63,7 @@
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="238522557">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">About NewApplication</string>
+									<string key="NSTitle">About RaiseMan</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="1033313550"/>
@@ -1116,7 +1116,7 @@
 			<object class="NSCustomObject" id="739804602">
 				<string key="NSClassName">NSFontManager</string>
 			</object>
-			<object class="NSCustomObject" id="84154388">
+			<object class="NSCustomObject" id="958612309">
 				<string key="NSClassName">AppController</string>
 			</object>
 		</object>
@@ -1154,14 +1154,6 @@
 						<reference key="destination" ref="759406840"/>
 					</object>
 					<int key="connectionID">127</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">orderFrontStandardAboutPanel:</string>
-						<reference key="source" ref="1021"/>
-						<reference key="destination" ref="238522557"/>
-					</object>
-					<int key="connectionID">142</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -1654,10 +1646,18 @@
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">showPreferencePanel:</string>
-						<reference key="source" ref="84154388"/>
+						<reference key="source" ref="958612309"/>
 						<reference key="destination" ref="609285721"/>
 					</object>
 					<int key="connectionID">452</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showAboutPanel:</string>
+						<reference key="source" ref="958612309"/>
+						<reference key="destination" ref="238522557"/>
+					</object>
+					<int key="connectionID">453</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2541,7 +2541,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">449</int>
-						<reference key="object" ref="84154388"/>
+						<reference key="object" ref="958612309"/>
 						<reference key="parent" ref="0"/>
 					</object>
 				</object>
@@ -2945,7 +2945,7 @@
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{592, 630}, {242, 183}}</string>
+					<string>{{592, 630}, {232, 183}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{{23, 794}, {245, 183}}</string>
@@ -2995,7 +2995,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">452</int>
+			<int key="maxID">453</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3004,8 +3004,17 @@
 					<string key="className">AppController</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showPreferencePanel:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>showAboutPanel:</string>
+							<string>showPreferencePanel:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>

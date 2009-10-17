@@ -21,4 +21,16 @@
 	[preferenceController showWindow:self];
 }
 
+- (IBAction)showAboutPanel:(id)sender
+{
+	BOOL successful = [NSBundle loadNibNamed:@"About" owner:self];
+	NSLog(@"was successful: %d",successful);
+}
+
+- (IBAction)closeAboutPanel:(id)sender 
+{
+	[sender close];
+}
+
+
 @end

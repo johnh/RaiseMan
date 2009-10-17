@@ -14,5 +14,7 @@
 	
 }
 -(IBAction)showPreferencePanel:(id)sender;
+-(IBAction)showAboutPanel:(id)sender;
+-(IBAction)closeAboutPanel:(id)sender;
 
 @end
