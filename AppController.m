@@ -29,8 +29,37 @@
 
 - (IBAction)closeAboutPanel:(id)sender 
 {
-	[sender close];
+	[aboutPanel close];
+	//[sender close];
+	
+	NSLog(@"About panel closed");
 }
 
+//NSApplication delegate method to see if we open a blank new document on start
+- (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender
+{
+	NSLog(@"applicationShouldOpenUntitledFile:");
+	return [[NSUserDefaults standardUserDefaults] boolForKey:BNREmptyDocKey];
+}
+
+
++ (void) initialize
+{
+	//Create a dictionary
+	NSMutableDictionary *defaultValues = [NSMutableDictionary dictionary];
+	
+	//Archive the color object
+	NSData *colorAsData = [NSKeyedArchiver archivedDataWithRootObject:[NSColor yellowColor]];
+	
+	//Put defaults in the dictionary
+	[defaultValues setObject:colorAsData forKey:BNRTableBgColorKey];
+	[defaultValues setObject:[NSNumber numberWithBool:YES] forKey:BNREmptyDocKey];
+	
+	//register the dictionary of defaults
+	[[NSUserDefaults standardUserDefaults] registerDefaults:defaultValues];
+	
+	NSLog(@"regisered defaults : %@", defaultValues);
+
+}
 
 @end

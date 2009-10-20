@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+extern NSString * const BNRTableBgColorKey;
+extern NSString * const BNREmptyDocKey;
 
 
 @interface PreferenceController : NSWindowController {
@@ -15,5 +17,9 @@
 }
 -(IBAction)changeBackgroundColor:(id)sender;
 -(IBAction)changeNewEmptyDoc:(id)sender;
+
+-(NSColor *) tableBgColor;
+-(BOOL) emptyDoc;
+
 
 @end

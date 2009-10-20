@@ -11,6 +11,7 @@
 
 @interface AppController : NSObject {
 	PreferenceController *preferenceController;
+	IBOutlet NSPanel *aboutPanel;
 	
 }
 -(IBAction)showPreferencePanel:(id)sender;
