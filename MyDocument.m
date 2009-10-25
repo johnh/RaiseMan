@@ -116,7 +116,7 @@
 - (void)removeObjectFromEmployeesAtIndex:(int)index{
 
 	Person *p = [employees objectAtIndex:index];
-	NSLog(@"removing %@ from %@", p, employees);
+	NSLog(@"JA JA removing %@ from %@", p, employees);
 	NSUndoManager *undo = [self undoManager];
 	[[undo prepareWithInvocationTarget:self] insertObject:p inEmployeesAtIndex:index];
 	if (![undo isUndoing]) {
@@ -220,6 +220,35 @@
 	// Begin the edit in the first column
 	[tableView editColumn:0 row:row withEvent:nil select:YES];
 	
+}
+
+/******************
+ * action to remove employee(s) w/ confirmation
+ *
+ *******************/
+- (IBAction)removeEmployee:(id)sender 
+{
+	NSArray *selectedPeople = [employeeController selectedObjects];
+	NSAlert *alert = [NSAlert alertWithMessageText:@"Delelte" defaultButton:@"Delete" 
+						alternateButton:@"Cancel" 
+						otherButton:nil 
+						informativeTextWithFormat:@"Do you really want to delete %d people?", 
+					  [selectedPeople count]];
+	NSLog(@"Starting alert sheet");
+	[alert beginSheetModalForWindow:[tableView window] 
+					modalDelegate:self 
+					didEndSelector:@selector(alertEnded:code:context:) contextInfo:NULL];
+}
+
+//call back from 'delete' alert window
+- (void)alertEnded:(NSAlert *)alert code:(int)choice context:(void *)v 
+{
+	NSLog(@"Alert sheet ended");
+	// if user chose delete, tell array controller to delete the people
+	if (choice == NSAlertDefaultReturn) {
+		//the argument to remove: is ignored
+		[employeeController remove:nil];
+	}
 }
 
 @end
