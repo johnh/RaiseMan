@@ -14,11 +14,17 @@
 
 - (id)init
 {
-    self = [super init];
-    if (self) {
-		employees = [[NSMutableArray alloc] init];
-    }
-    return self;
+    if (![super init]) {
+		return nil;
+	}
+	employees = [[NSMutableArray alloc] init];
+    
+	NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+	[nc addObserver:self selector:@selector(handleColorChange:)
+			   name:BNRColorChangedNotification object:nil];
+	NSLog(@"Registered with notificaton server");
+	
+	return self;
 }
 
 - (NSString *)windowNibName
@@ -91,7 +97,19 @@
 
 - (void)dealloc {
 	[self setEmployees:nil];
+	NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+	[nc removeObserver:self]; 
 	[super dealloc];
+}
+
+//
+// this method is called when color change is done in pref panel and a notification is sent
+//
+- (void)handleColorChange:(NSNotification *)note
+{
+	NSLog(@"Received Notification: %@", note);
+	NSColor *color = [[note userInfo] objectForKey:@"color"];
+	[tableView setBackgroundColor:color];
 }
 
 //******** insert and remove methods with undo support

@@ -3,7 +3,7 @@
 //  RaiseMan
 //
 //  Created by John D. Haro on 10/17/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009. All rights reserved.
 //
 
 #import "AppController.h"
