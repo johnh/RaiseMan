@@ -15,6 +15,7 @@
 		8101A135108A146600D02B17 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8101A134108A146600D02B17 /* About.xib */; };
 		8136B5DD1082F2DC0048C384 /* d20 in Resources */ = {isa = PBXBuildFile; fileRef = 8136B5DC1082F2DC0048C384 /* d20 */; };
 		81B173720E4F58D7000CCB0C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B173710E4F58D7000CCB0C /* Person.m */; };
+		81C9770510A7A8F0001F3CC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C9770310A7A8F0001F3CC9 /* Localizable.strings */; };
 		81EA100C10896A6E007C4739 /* Gimp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 81EA100B10896A6E007C4739 /* Gimp.icns */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
@@ -45,6 +46,9 @@
 		8136B5DC1082F2DC0048C384 /* d20 */ = {isa = PBXFileReference; explicitFileType = image.ico; fileEncoding = 4; path = d20; sourceTree = "<group>"; };
 		81B173700E4F58D7000CCB0C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		81B173710E4F58D7000CCB0C /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		81C976F110A7A360001F3CC9 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		81C9770410A7A8F0001F3CC9 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		81C9770610A7A94C001F3CC9 /* French */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; fileEncoding = 4; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
 		81EA100B10896A6E007C4739 /* Gimp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Gimp.icns; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +100,7 @@
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
+				81C9770310A7A8F0001F3CC9 /* Localizable.strings */,
 			);
 			name = RaiseMan;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				81EA100C10896A6E007C4739 /* Gimp.icns in Resources */,
 				8101A118108A065100D02B17 /* Preferences.xib in Resources */,
 				8101A135108A146600D02B17 /* About.xib in Resources */,
+				81C9770510A7A8F0001F3CC9 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +239,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1DDD58290DA1D0D100B32029 /* English */,
+				81C976F110A7A360001F3CC9 /* French */,
 			);
 			name = MyDocument.xib;
 			sourceTree = "<group>";
@@ -251,6 +258,15 @@
 				2A37F4BAFDCFA73011CA2CEA /* English */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		81C9770310A7A8F0001F3CC9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C9770410A7A8F0001F3CC9 /* English */,
+				81C9770610A7A94C001F3CC9 /* French */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
